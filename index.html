@@ -5,8 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>DevFlow — Votre outil de développement</title>
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 <body>
+
+  <!-- Décoration fond -->
+  <div class="bg-blob blob1"></div>
+  <div class="bg-blob blob2"></div>
+  <div class="bg-blob blob3"></div>
 
   <!-- NAVBAR -->
   <nav class="navbar">
@@ -21,24 +27,40 @@
   <!-- HERO -->
   <section class="hero">
     <div class="hero-content">
+      <div class="badge">✨ Nouveau workflow Git</div>
       <h1>Gérez votre code<br><span>comme un pro.</span></h1>
-      <p>DevFlow est la plateforme qui simplifie votre workflow Git au quotidien.</p>
-      <a href="#features" class="btn">Découvrir</a>
+      <p>DevFlow est la plateforme qui simplifie votre workflow Git au quotidien, avec douceur et élégance.</p>
+      <div class="hero-btns">
+        <a href="#features" class="btn">Découvrir</a>
+        <a href="#about" class="btn btn-outline">En savoir plus</a>
+      </div>
     </div>
     <div class="hero-image">
       <div class="code-card">
-        <p><span class="green">$</span> git init</p>
-        <p><span class="green">$</span> git add .</p>
-        <p><span class="green">$</span> git commit -m <span class="yellow">"init: premier commit"</span></p>
-        <p><span class="green">$</span> git push origin main</p>
-        <p class="blink">▌</p>
+        <div class="code-card-header">
+          <span class="dot dot1"></span>
+          <span class="dot dot2"></span>
+          <span class="dot dot3"></span>
+          <span class="code-card-title">terminal</span>
+        </div>
+        <div class="code-lines">
+          <p><span class="prompt">$</span> git init</p>
+          <p><span class="prompt">$</span> git add .</p>
+          <p><span class="prompt">$</span> git commit -m <span class="string">"init: premier commit"</span></p>
+          <p><span class="prompt">$</span> git push origin main</p>
+          <p class="blink">▌</p>
+        </div>
       </div>
+      <div class="floating-pill pill1">🌸 Branche fusionnée</div>
+      <div class="floating-pill pill2">✅ Commit réussi</div>
     </div>
   </section>
 
   <!-- FEATURES -->
   <section class="features" id="features">
-    <h2>Nos Fonctionnalités</h2>
+    <div class="section-label">Fonctionnalités</div>
+    <h2>Tout ce dont vous avez besoin</h2>
+    <p class="section-sub">Simple, puissant, et pensé pour vous.</p>
     <div class="cards">
       <div class="card">
         <div class="icon">🚀</div>
@@ -60,18 +82,35 @@
 
   <!-- ABOUT -->
   <section class="about" id="about">
-    <h2>À propos de DevFlow</h2>
-    <p>DevFlow a été créé par des développeurs, pour des développeurs. Notre mission est de rendre la gestion de versions accessible à tous, du débutant au expert.</p>
+    <div class="about-inner">
+      <div class="about-decoration">💜</div>
+      <div class="section-label">Notre histoire</div>
+      <h2>À propos de DevFlow</h2>
+      <p>DevFlow a été créé par des développeurs, pour des développeurs. Notre mission est de rendre la gestion de versions accessible à tous, du débutant à l'expert.</p>
+      <div class="about-stats">
+        <div class="stat">
+          <strong>10k+</strong>
+          <span>Utilisateurs</span>
+        </div>
+        <div class="stat">
+          <strong>500k+</strong>
+          <span>Commits gérés</span>
+        </div>
+        <div class="stat">
+          <strong>99.9%</strong>
+          <span>Disponibilité</span>
+        </div>
+      </div>
+    </div>
   </section>
 
   <!-- FOOTER -->
   <footer id="contact">
+    <div class="footer-logo">Dev<span>Flow</span></div>
     <p>© 2025 DevFlow — Tous droits réservés</p>
     <p>Contact : <a href="mailto:contact@devflow.io">contact@devflow.io</a></p>
   </footer>
 
   <script src="script.js"></script>
 </body>
-</html><!-- main: mise a jour footer -->
-</html><!-- feature: nouvelle section ajoutée -->
-<!-- feature: lien CSS verifie -->
+</html>
